@@ -1,0 +1,30 @@
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
+
+    <h1>Heads Of State</h1>
+    <button onclick="window.location.href='/addHeadOfState';">
+        Add Head Of State
+      </button>
+<br><br> 
+<!--need to finish-->
+<table style="width:50%">
+    <br></br>
+    <tr>
+    <th>Country Code</th>
+    <th>Head of State</th>
+    </tr>
+    <% countries.forEach((country) =>
+    { %>
+    <tr>
+     <td><%= country._id %></td>
+    <td><%= country.headOfState %></td>  
+    </tr>
+    <% }) %>
+    </table> 
+
+<a href ="/">Home</a>
+
